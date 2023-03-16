@@ -70,3 +70,19 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'devise'
+
+gem 'pry-rails'
+
+gem 'activesupport'
+
+gem 'carrierwave'
+
+gem 'bulma-rails'
+gem 'bulma-extensions-rails'
+
+gem 'webpacker', '~> 4.0'
+gem 'jquery-rails'
