@@ -15,6 +15,7 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.new(params.permit(:user_id, :room_id, :start_date, :end_date, :people))
     if @reservation.invalid?
       redirect_to room_path(@reservation.room.id)
+      flash[:alert] = "入力内容が不正です"
     else
       @reservation.total_day = ((@reservation.end_date - @reservation.start_date) / 1.days).to_i
       @reservation.total_price = (@room.price * @reservation.total_day * @reservation.people).to_i

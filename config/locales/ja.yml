@@ -1,4 +1,13 @@
 ja:
+  activerecord:
+    models:
+      room: ルーム
+    attributes:
+      room:
+        room_name: ルーム名
+        room_introduction: ルーム紹介
+        price: 料金
+        address: 住所
   time:
     formats:
       default: "%Y/%m/%d"
