@@ -52,7 +52,7 @@
 
     <div class="col-md-6">
       <label>人数</label>
-      <%= f.number_field :people %>
+      <%= f.number_field :people, in: 1..9999 %>
     </div>
     
     <%= f.submit "この日程で予約する", class: "btn btn-danger btn-wide" %>    

@@ -1,3 +1,7 @@
+<%= link_to :back do %>
+  <button>戻る</button>
+<% end %>  
+
 <h3>予約内容確認</h3>
 
 <%= form_with model: @reservation, method: :post, url: reservations_path, local: true, scope: :reservation  do |f| %>

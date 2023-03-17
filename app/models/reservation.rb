@@ -4,7 +4,7 @@ class Reservation < ApplicationRecord
 
   validates :start_date, presence: true
   validates :end_date, presence: true
-  validates :people, presence: true
+  validates :people, presence: true, numericality: {only_integer: true}
   validate :start_end_check
 
   def start_end_check
